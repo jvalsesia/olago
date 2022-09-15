@@ -58,22 +58,22 @@ docker build -t <your_user>/codeeducation:latest .
 docker run <your_user>/codeeducation
 ```
 
-## 6- Login to DockerHub
+## 7- Login to DockerHub
 ```bash
 docker login
 ```
 
 
-## Push to registry
+## 8- Push to registry
 ```bash
 docker push <your_user>/codeeducation:latest
 ```
 
-## Dockerhub link
+## 9- Dockerhub link
 
 https://hub.docker.com/r/jvalsesia/codeeducation
 
-## Pull from registry
+## 10- Pull from registry
 ```bash
 docker pull jvalsesia/codeeducation
 ```
