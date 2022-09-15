@@ -29,7 +29,7 @@ func main() {
 ```
 
 
-## 4- create Dockerfile with multi-stage builds
+## 4- Create Dockerfile with multi-stage builds
 In order to get small image we have created a multi-stage build, first using golang:1.19-alpine image to build the application and generate the executable **ola** and second using scratch image to run the application **ola**:
 
 ```dockerfile
@@ -48,23 +48,33 @@ ENTRYPOINT ["./ola"]
 ```
 
 
-## 5- build container
+## 5- Build container
 ```bash
 docker build -t <your_user>/codeeducation:latest .
 ```
 
-## 6- run container
+## 6- Run container
 ```bash
 docker run <your_user>/codeeducation
 ```
 
-## 6- login to DockerHub
+## 6- Login to DockerHub
 ```bash
 docker login
 ```
 
 
-## push to registry
+## Push to registry
 ```bash
 docker push <your_user>/codeeducation:latest
 ```
+
+## Dockerhub link
+
+https://hub.docker.com/r/jvalsesia/codeeducation
+
+## Pull from registry
+```bash
+docker pull jvalsesia/codeeducation
+```
+
